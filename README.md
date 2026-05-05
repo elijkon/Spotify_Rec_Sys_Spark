@@ -12,6 +12,7 @@ The development of this recommendation engine followed a mathematical pipeline:
 * **Feature Engineering:** Extracted dense audio features and engineered custom evaluation metrics, specifically the `energy_valence_ratio`.
 * **Dimensionality Reduction:** Built a multi-layer Deep Autoencoder using PyTorch to compress the dataset into a non-linear latent space.
 * **Architectural Evaluation:** Mathematically determined the optimal number of K-Means clusters (k=5) using Silhouette and Elbow optimization. These validation metrics proved that the Deep Autoencoder significantly outperformed a linear Principal Component Analysis baseline.
+* **Visualization:** Used UMAP to visualize and inspect both latent spaces that were created with PCA and AE.
 * **Recommendation Deployment:** Calculated a global user taste centroid to deploy Cosine Similarity within the continuous latent space, successfully returning mathematically matched recommendations.
 
 ## Key Findings
